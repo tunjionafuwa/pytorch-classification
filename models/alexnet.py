@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # Test the model
     model = alexnet(input_shape=3, num_classes=1000)
 
-    x = torch.randn(1, 3, 224, 224)
+    x = torch.randn(1, 3, 227, 227)
     output = model(x)
     print(output)
 
